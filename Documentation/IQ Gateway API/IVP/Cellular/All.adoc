@@ -50,5 +50,32 @@ As of recent Gateway software versions this request requires user authentication
 .GET */ivp/cellular* Response
 [source,json,subs="+quotes"]
 ----
-{}
+{
+  "cellular": {
+    "modem": {
+      "part_num": "865-02038-r05",
+      "firmware": "EG25GLGDR07A03M1G_01.200.01.200",
+      "iccid": "89011700324444850026",
+      "mei": "869387061406881",
+      "imsi": "310170444485002",
+      "home_network": "ATT",
+      "msisdn": ""
+    },
+    "config": {
+      "carrier": "Telstra Mobile",
+      "apn": "m2m005017.attz",
+      "default_apn": ""
+    },
+    "status": {
+      "network": true,
+      "mode": 9,
+      "gen": "25",
+      "rssi": 25,
+      "max_rssi": 31,
+      "ber": 99,
+      "max_ber": 7,
+      "ber_str": "Not known/detectable"
+    }
+  }
+}
 ----
